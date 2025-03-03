@@ -1,0 +1,29 @@
+{% set page_title %}{% block page_title %}Focal Curve{% endblock %}{% endset %}
+{% set page_desc %}{{ striptags|e }}{% block page_desc %}{% endblock %}{{ endfilter }}{% endset %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc }}">
+
+  {% block social_meta %}{% endblock social_meta %}
+
+  {% block site_css %}
+  <link rel="stylesheet" href="/assets/css/style.scss">
+  {% endblock %}
+  {% block page_css %}{% endblock %}
+
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  {% block header %}{% include "partials/header.html" %}{% endblock %}
+
+  <main id="outer-wrapper" class="{% block main_class %}{% endblock %}">
+  {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}{% include "partials/footer.html" %}{% endblock %}
+  {% block page_js %}{% endblock %}
+</body>

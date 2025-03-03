@@ -1,0 +1,16 @@
+@use "includes/lib" as *;
+
+.accent {
+    @include font-accent;
+}
+
+.title-2xl { @include text-title-2xl; }
+.title-xl { @include text-title-xl; }
+.title-lg { @include text-title-lg; }
+.title-md { @include text-title-md; }
+.title-sm { @include text-title-sm; }
+.title-xs { @include text-title-xs; }
+.body-xl { @include text-body-xl; }
+.body-lg { @include text-body-lg; }
+.body-md { @include text-body-md; }
+.body-sm { @include text-body-sm; }

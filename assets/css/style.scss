@@ -1,0 +1,36 @@
+// variables
+@use "includes/lib" as *;
+
+// base styles
+@use "base/reset";
+@use "base/fonts";
+@use "base/headings";
+
+// component styles
+@use "components/containers";
+
+html {
+    font-size: 18px;
+    background: var(--color-cream);
+}
+
+body {
+    font-family: var(--base-font-family);
+    font-variant-ligatures: none;
+    line-height: 1.5;
+    color: var(--color-ink);
+    background: var(--color-cream);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: var(--color-ink);
+    }
+
+    body {
+        background: var(--color-ink);
+        color: var(--color-cream);
+    }
+}

@@ -1,0 +1,60 @@
+@use "includes/lib" as *;
+
+html, body { background: var(--color-white); }
+
+// color swatches
+.swatches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em 10px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.swatch {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 210px;
+    text-align: center;
+
+    &::before {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 200px;
+        left: 50%;
+        margin-left: -100px;
+        position: absolute;
+        top: 0;
+        width: 200px;
+        outline: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+.swatch-blue:before { background-color: var(--color-blue); }
+.swatch-blue-dark:before { background-color: var(--color-blue-dark); }
+.swatch-blue-darker:before { background-color: var(--color-blue-darker); }
+.swatch-blue-light:before { background-color: var(--color-blue-light); }
+
+.swatch-orange:before { background-color: var(--color-orange); }
+.swatch-orange-dark:before { background-color: var(--color-orange-dark); }
+.swatch-orange-darker:before { background-color: var(--color-orange-darker); }
+.swatch-orange-light:before { background-color: var(--color-orange-light); }
+
+.swatch-red:before { background-color: var(--color-red); }
+.swatch-red-dark:before { background-color: var(--color-red-dark); }
+.swatch-red-darker:before { background-color: var(--color-red-darker); }
+.swatch-red-light:before { background-color: var(--color-red-light); }
+
+.swatch-cream:before { background-color: var(--color-cream); }
+.swatch-cream-dark:before { background-color: var(--color-cream-dark); }
+.swatch-cream-darker:before { background-color: var(--color-cream-darker); }
+
+.swatch-ink:before { background-color: var(--color-ink); }
+.swatch-ink-light:before { background-color: var(--color-ink-light); }
+.swatch-ink-lighter:before { background-color: var(--color-ink-lighter); }
+
+.swatch-black:before { background-color: var(--color-black); }
+.swatch-white:before { background-color: var(--color-white); }

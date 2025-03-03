@@ -1,0 +1,49 @@
+@use '../includes/lib' as *;
+
+// This wrapper element sets the content width
+.fc5-l-content {
+    @include clearfix;
+    margin: 0 auto;
+    max-width: var(--content-max);
+    min-width: calc(var(--content-xs) - (var(--layout-xs) * 2));
+    position: relative;
+    padding: var(--layout-md) var(--layout-xs);
+
+    @media #{$mq-md} {
+        padding: var(--layout-lg) var(--layout-md);
+    }
+
+    @media #{$mq-xl} {
+        padding: var(--layout-xl) var(--layout-lg);
+    }
+
+
+    &.fc5-t-content-sm {
+        max-width: var(--content-sm);
+    }
+
+    &.fc5-t-content-md {
+        max-width: var(--content-md);
+    }
+
+    &.fc5-t-content-lg {
+        max-width: var(--content-lg);
+    }
+
+    &.fc5-t-content-xl {
+        max-width: var(--content-xl);
+    }
+
+    // Remove vertical spacing
+    &.fc5-t-content-nospace {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    // No bottom margins on last child
+    // Note: this can cause problems if fc5-l-content
+    // is used as a grid or flex container.
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}

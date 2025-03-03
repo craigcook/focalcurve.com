@@ -1,0 +1,91 @@
+:root {
+    // fonts
+    --base-font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    --title-font-family: "Libre Bodoni", Georgia, "Times New Roman", serif;
+    --accent-font-family: "Cookie", Georgia, "Times New Roman", serif;
+
+    // colors
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: #88d1f1;
+    --color-blue-light: #c3e8f8;
+    --color-blue-dark: #558194;
+    --color-blue-darker: #2a505e;
+    --color-orange: #f8b83e;
+    --color-orange-dark: #c98525;
+    --color-orange-darker: #653509;
+    --color-orange-light: #fadb8c;
+    --color-red: #fb8e92;
+    --color-red-dark:#c16669;
+    --color-red-darker: #581e21;
+    --color-red-light: #fdc6c8;
+    --color-cream: #fffdf3;
+    --color-cream-dark: #f9efdf;
+    --color-cream-darker: #e4d7c5;
+    --color-ink: #2d2a3b;
+    --color-ink-light: #423e53;
+    --color-ink-lighter: #615d73;
+
+    // units
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --layout-2xs: 16px;
+    --layout-xs: 24px;
+    --layout-sm: 32px;
+    --layout-md: 48px;
+    --layout-lg: 64px;
+    --layout-xl: 96px;
+    --layout-2xl: 192px;
+
+    // content
+    --content-xs: 304px;
+    --content-sm: 432px;
+    --content-md: 688px;
+    --content-lg: 928px;
+    --content-xl: 1152px;
+    --content-max: 1440px;
+
+    --screen-xs: 320px; // content-xs + 16px
+    --screen-sm: 480px; // content-sm + 48px
+    --screen-md: 768px; // contend-md + 80px
+    --screen-lg: 1024px; // content-lg + 128px
+    --screen-xl: 1312px; // contend-xl + 128px
+
+    // font sizes
+    --title-2xl-size: 3.8rem;
+    --title-2xl-line-height: 1.125;
+    --title-xl-size: 3.05rem;
+    --title-xl-line-height: 1.143;
+    --title-lg-size: 2.4rem;
+    --title-lg-line-height: 1.166;
+    --title-md-size: 2rem;
+    --title-md-line-height: 1.1;
+    --title-sm-size: 1.5rem;
+    --title-sm-line-height: 1.125;
+    --title-xs-size: 1.25rem;
+    --title-xs-line-height: 1.166;
+    --title-2xs-size: 1rem;
+    --title-2xs-line-height: 1.2;
+    --title-3xs-size: 0.8rem;
+    --title-3xs-line-height: 1.25;
+    --body-xl-size: 1.5rem;
+    --body-lg-size: 1.25rem;
+    --body-md-size: 1rem;
+    --body-sm-size: 0.8rem;
+    --body-xs-size: 0.65rem;
+    --body-line-height: 1.5;
+}
+
+// media queries
+$mq-xs: "(min-width: 320px)";
+$mq-sm: "(min-width: 480px)";
+$mq-md: "(min-width: 768px)";
+$mq-lg: "(min-width: 1024px)";
+$mq-xl: "(min-width: 1312px)";
+$mq-short: "(max-height: 599px)";
+$mq-tall: "(min-height: 600px)";
+$mq-high-res: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi)";

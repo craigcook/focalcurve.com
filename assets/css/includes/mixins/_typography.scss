@@ -1,0 +1,155 @@
+@use "sass:math";
+@use "sass:meta";
+@use "../tokens";
+@use "../functions";
+
+// * -------------------------------------------------------------------------- */
+// Font families
+@mixin font-base {
+    font-family: var(--base-font-family);
+}
+
+@mixin font-title {
+    font-family: var(--title-font-family);
+}
+
+@mixin font-accent {
+    font-family: var(--accent-font-family);
+}
+
+
+// * -------------------------------------------------------------------------- */
+// A mixin to output font-size in rems with a px fallback for old browsers.
+// Declare sizes in pixels for ease and clarity, the mixin does the math.
+// Requires: remify(), pixify() - defined in includes/themes.scss.
+// Usage:
+//  .foo { @include font-size(24px); }
+
+@mixin font-size($size) {
+    // When unit is pixels, pass it through and convert to rem
+
+    @if math.unit($size) == 'px' {
+        font-size: $size;
+        font-size: functions.remify($size);
+    }
+
+    // When unit is not pixels, show an error
+    @else {
+        @error 'This mixin only accepts sizes in pixels. You declared `font-size(#{$size})`.';
+    }
+}
+
+// * -------------------------------------------------------------------------- */
+// Consistent font sizes. Avoid sizing text arbitrarily and use this
+// set of predefined sizes. Sizes adapt at common breakpoints, and
+// there's some redundancy at smaller sizes because we don't want things
+// getting too tiny.
+
+// Example usage:
+//  .title { @include text-title-xl; }
+//  .subtitle { @include text-title-lg; }
+//  .intro { @include text-body-lg; }
+
+@mixin text-title-2xl {
+    font-size: var(--title-xl-size);
+    line-height: var(--title-xl-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-2xl-size);
+        line-height: var(--title-2xl-line-height);
+    }
+}
+
+
+@mixin text-title-xl {
+    font-size: var(--title-lg-size);
+    line-height: var(--title-lg-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-xl-size);
+        line-height: var(--title-xl-line-height);
+    }
+}
+
+
+@mixin text-title-lg {
+    font-size: var(--title-md-size);
+    line-height: var(--title-md-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-lg-size);
+        line-height: var(--title-lg-line-height);
+    }
+}
+
+
+@mixin text-title-md {
+    font-size: var(--title-sm-size);
+    line-height: var(--title-sm-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-md-size);
+        line-height: var(--title-md-line-height);
+    }
+}
+
+@mixin text-title-sm {
+    font-size: var(--title-xs-size);
+    line-height: var(--title-xs-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-sm-size);
+        line-height: var(--title-sm-line-height);
+    }
+}
+
+@mixin text-title-xs {
+    font-size: var(--title-2xs-size);
+    line-height: var(--title-2xs-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-xs-size);
+        line-height: var(--title-xs-line-height);
+    }
+}
+
+@mixin text-title-2xs {
+    font-size: var(--title-3xs-size);
+    line-height: var(--title-3xs-line-height);
+
+    @media #{tokens.$mq-md} {
+        font-size: var(--title-2xs-size);
+        line-height: var(--title-2xs-line-height);
+    }
+}
+
+@mixin text-title-3xs {
+    font-size: var(--title-3xs-size);
+    line-height: var(--title-3xs-line-height);
+}
+
+// body copy
+@mixin text-body-xl {
+    font-size: var(--body-xl-size);
+    line-height: var(--body-line-height);
+}
+
+@mixin text-body-lg {
+    font-size: var(--body-lg-size);
+    line-height: var(--body-line-height);
+}
+
+@mixin text-body-md {
+    font-size: var(--body-md-size);
+    line-height: var(--body-line-height);
+}
+
+@mixin text-body-sm {
+    font-size: var(--body-sm-size);
+    line-height: var(--body-line-height);
+}
+
+@mixin text-body-xs {
+    font-size: var(--body-xs-size);
+    line-height: var(--body-line-height);
+}
