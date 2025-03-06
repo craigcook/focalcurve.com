@@ -13,7 +13,7 @@
   {% block social_meta %}{% endblock social_meta %}
 
   {% block site_css %}
-  <link rel="stylesheet" href="/assets/css/style.scss">
+  <link rel="stylesheet" href="/assets/css/global.scss">
   {% endblock %}
   {% block page_css %}{% endblock %}
 
@@ -21,7 +21,7 @@
 <body class="{% block body_class %}{% endblock %}">
   {% block header %}{% include "partials/header.html" %}{% endblock %}
 
-  <main id="outer-wrapper" class="{% block main_class %}{% endblock %}">
+  <main id="site-body" class="{% block main_class %}{% endblock %}">
   {% block content %}{% endblock %}
   </main>
 

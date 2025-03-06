@@ -1,0 +1,25 @@
+// variables, mixins, functions, etc
+@use "includes/lib" as *;
+
+// base styles
+@use "base/base";
+
+// component styles
+@use "components/containers";
+
+.site-header {
+    padding: var(--spacing-md) 0;
+    border-bottom: 2px solid var(--color-cream-dark);
+}
+
+.site-footer {
+    padding: var(--spacing-md) 0;
+    border-top: 2px solid var(--color-cream-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    .site-header,
+    .site-footer {
+        border-color: var(--color-ink-light);
+    }
+}
