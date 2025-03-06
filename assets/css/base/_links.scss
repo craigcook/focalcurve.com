@@ -1,0 +1,31 @@
+@use '../includes/lib' as *;
+
+:link {
+    color: var(--color-link);
+    font-weight: bold;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.3em;
+    transition: text-underline-offset 100ms ease-in;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--color-link-hover);
+        text-underline-offset: 0.2em;
+    }
+
+    &:active {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+:visited {
+    color: var(--color-link-visited);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--color-link-visited-hover);
+    }
+}

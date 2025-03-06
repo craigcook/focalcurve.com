@@ -26,6 +26,19 @@
     --color-ink-light: #423e53;
     --color-ink-lighter: #615d73;
 
+    // link colors
+    --color-link: #316dba;
+    --color-link-hover: #325b90;
+    --color-link-visited: #9c58b0;
+    --color-link-visited-hover: #824b93;
+
+    @media (prefers-color-scheme: dark) {
+        --color-link: #88d1f1;
+        --color-link-hover: #c3e8f8;
+        --color-link-visited: #dbaaea;
+        --color-link-visited-hover: #d590ea;
+    }
+
     // units
     --spacing-xs: 4px;
     --spacing-sm: 8px;
@@ -57,27 +70,22 @@
 
     // font sizes
     --title-2xl-size: 3.8rem;
-    --title-2xl-line-height: 1.125;
-    --title-xl-size: 3.05rem;
-    --title-xl-line-height: 1.143;
+    --title-xl-size: 3.1rem;
     --title-lg-size: 2.4rem;
-    --title-lg-line-height: 1.166;
     --title-md-size: 2rem;
-    --title-md-line-height: 1.1;
     --title-sm-size: 1.5rem;
-    --title-sm-line-height: 1.125;
     --title-xs-size: 1.25rem;
-    --title-xs-line-height: 1.166;
     --title-2xs-size: 1rem;
-    --title-2xs-line-height: 1.2;
     --title-3xs-size: 0.8rem;
-    --title-3xs-line-height: 1.25;
     --body-xl-size: 1.5rem;
     --body-lg-size: 1.25rem;
     --body-md-size: 1rem;
     --body-sm-size: 0.8rem;
     --body-xs-size: 0.65rem;
-    --body-line-height: 1.5;
+
+    --base-font-size: 18px;
+    --title-line-height: 1.125;
+    --body-line-height: 1.4;
 }
 
 // media queries

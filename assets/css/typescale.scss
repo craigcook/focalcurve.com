@@ -1,9 +1,5 @@
 @use "includes/lib" as *;
 
-.accent {
-    @include font-accent;
-}
-
 .title-2xl { @include text-title-2xl; }
 .title-xl { @include text-title-xl; }
 .title-lg { @include text-title-lg; }
@@ -14,3 +10,14 @@
 .body-lg { @include text-body-lg; }
 .body-md { @include text-body-md; }
 .body-sm { @include text-body-sm; }
+
+.accent { @include font-accent; }
+
+.label {
+    @include text-body-sm;
+    color: var(--color-blue-dark);
+
+    @media (prefers-color-scheme: dark) {
+        color: var(--color-orange-light);
+    }
+}

@@ -1,0 +1,95 @@
+@use '../includes/lib' as *;
+
+// We most frequently use lists for semantic structure and don't actually
+// want to display them as lists. It's simpler to reset lists globally
+// and only display them as lists in text when needed with a utility class.
+ul,
+ol {
+    list-style: none;
+}
+
+ul.fc5-u-list-styled {
+    margin-left: var(--layout-sm);
+    list-style: disc;
+
+    li {
+        margin-bottom: 0.25em;
+
+        &::marker {
+            color: var(--color-blue-dark);
+
+            @media (prefers-color-scheme: dark) {
+                color: var(--color-orange);
+            }
+        }
+    }
+
+    ul {
+        margin-left: var(--layout-xs);
+        list-style: circle;
+        margin-bottom: 0;
+    }
+
+    ol {
+        margin-left: var(--layout-xs);
+        list-style: decimal;
+        margin-bottom: 0;
+    }
+}
+
+ol.fc5-u-list-styled {
+    margin-left: var(--layout-sm);
+    list-style: decimal;
+
+    li {
+        margin-bottom: 0.25em;
+    }
+
+    ol {
+        margin-left: var(--layout-xs);
+        list-style: lower-alpha;
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin-left: var(--layout-xs);
+        list-style: disc;
+        margin-bottom: 0;
+    }
+}
+
+dl.fc5-u-list-styled {
+    dt {
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    dd {
+        margin-left: var(--layout-xs);
+        margin-bottom: 0.25em;
+    }
+
+    ul,
+    ol {
+        margin-left: var(--layout-xs);
+        margin-bottom: 0;
+    }
+
+    ul {
+        list-style: circle;
+    }
+}
+
+/* !important required to trump specificity and print stylesheet overrides */
+.fc5-u-list-unstyled {
+    list-style: none !important; /* stylelint-disable-line declaration-no-important */
+    margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+    margin-right: 0 !important; /* stylelint-disable-line declaration-no-important */
+
+    ul,
+    ol {
+        list-style: none !important; /* stylelint-disable-line declaration-no-important */
+        margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+        margin-right: 0 !important; /* stylelint-disable-line declaration-no-important */
+    }
+}

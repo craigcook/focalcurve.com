@@ -15,6 +15,7 @@
 
 @mixin font-accent {
     font-family: var(--accent-font-family);
+    font-weight: normal;
 }
 
 
@@ -52,104 +53,81 @@
 
 @mixin text-title-2xl {
     font-size: var(--title-xl-size);
-    line-height: var(--title-xl-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-2xl-size);
-        line-height: var(--title-2xl-line-height);
     }
 }
-
 
 @mixin text-title-xl {
     font-size: var(--title-lg-size);
-    line-height: var(--title-lg-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-xl-size);
-        line-height: var(--title-xl-line-height);
     }
 }
-
 
 @mixin text-title-lg {
     font-size: var(--title-md-size);
-    line-height: var(--title-md-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-lg-size);
-        line-height: var(--title-lg-line-height);
     }
 }
 
-
 @mixin text-title-md {
     font-size: var(--title-sm-size);
-    line-height: var(--title-sm-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-md-size);
-        line-height: var(--title-md-line-height);
     }
 }
 
 @mixin text-title-sm {
     font-size: var(--title-xs-size);
-    line-height: var(--title-xs-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-sm-size);
-        line-height: var(--title-sm-line-height);
     }
 }
 
 @mixin text-title-xs {
     font-size: var(--title-2xs-size);
-    line-height: var(--title-2xs-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-xs-size);
-        line-height: var(--title-xs-line-height);
     }
 }
 
 @mixin text-title-2xs {
     font-size: var(--title-3xs-size);
-    line-height: var(--title-3xs-line-height);
 
     @media #{tokens.$mq-md} {
         font-size: var(--title-2xs-size);
-        line-height: var(--title-2xs-line-height);
     }
 }
 
 @mixin text-title-3xs {
     font-size: var(--title-3xs-size);
-    line-height: var(--title-3xs-line-height);
 }
 
 // body copy
 @mixin text-body-xl {
     font-size: var(--body-xl-size);
-    line-height: var(--body-line-height);
 }
 
 @mixin text-body-lg {
     font-size: var(--body-lg-size);
-    line-height: var(--body-line-height);
 }
 
 @mixin text-body-md {
     font-size: var(--body-md-size);
-    line-height: var(--body-line-height);
 }
 
 @mixin text-body-sm {
     font-size: var(--body-sm-size);
-    line-height: var(--body-line-height);
 }
 
 @mixin text-body-xs {
     font-size: var(--body-xs-size);
-    line-height: var(--body-line-height);
 }
