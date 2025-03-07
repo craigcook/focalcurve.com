@@ -14,10 +14,6 @@
         color: var(--color-link-hover);
         text-underline-offset: 0.2em;
     }
-
-    &:active {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
 }
 
 :visited {
