@@ -8,15 +8,14 @@
     border-spacing: 0;
 
     caption {
-        text-align: left;
-        margin-bottom: 0.25em;
-        width: 100%;
         font-style: italic;
+        margin-bottom: 0.25em;
+        text-align: left;
+        width: 100%;
     }
 
     th,
     td {
-        text-align: left;
         border-top: 2px solid var(--color-orange-light);
         padding: 0.5em 10px;
         text-align: left;

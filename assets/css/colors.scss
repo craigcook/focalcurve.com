@@ -31,33 +31,33 @@
     }
 }
 
-.swatch-blue:before { background-color: var(--color-blue); }
-.swatch-blue-dark:before { background-color: var(--color-blue-dark); }
-.swatch-blue-darker:before { background-color: var(--color-blue-darker); }
-.swatch-blue-light:before { background-color: var(--color-blue-light); }
+.swatch-blue::before { background-color: var(--color-blue); }
+.swatch-blue-dark::before { background-color: var(--color-blue-dark); }
+.swatch-blue-darker::before { background-color: var(--color-blue-darker); }
+.swatch-blue-light::before { background-color: var(--color-blue-light); }
 
-.swatch-orange:before { background-color: var(--color-orange); }
-.swatch-orange-dark:before { background-color: var(--color-orange-dark); }
-.swatch-orange-darker:before { background-color: var(--color-orange-darker); }
-.swatch-orange-light:before { background-color: var(--color-orange-light); }
+.swatch-orange::before { background-color: var(--color-orange); }
+.swatch-orange-dark::before { background-color: var(--color-orange-dark); }
+.swatch-orange-darker::before { background-color: var(--color-orange-darker); }
+.swatch-orange-light::before { background-color: var(--color-orange-light); }
 
-.swatch-red:before { background-color: var(--color-red); }
-.swatch-red-dark:before { background-color: var(--color-red-dark); }
-.swatch-red-darker:before { background-color: var(--color-red-darker); }
-.swatch-red-light:before { background-color: var(--color-red-light); }
+.swatch-red::before { background-color: var(--color-red); }
+.swatch-red-dark::before { background-color: var(--color-red-dark); }
+.swatch-red-darker::before { background-color: var(--color-red-darker); }
+.swatch-red-light::before { background-color: var(--color-red-light); }
 
-.swatch-cream:before { background-color: var(--color-cream); }
-.swatch-cream-dark:before { background-color: var(--color-cream-dark); }
-.swatch-cream-darker:before { background-color: var(--color-cream-darker); }
+.swatch-cream::before { background-color: var(--color-cream); }
+.swatch-cream-dark::before { background-color: var(--color-cream-dark); }
+.swatch-cream-darker::before { background-color: var(--color-cream-darker); }
 
-.swatch-ink:before { background-color: var(--color-ink); }
-.swatch-ink-light:before { background-color: var(--color-ink-light); }
-.swatch-ink-lighter:before { background-color: var(--color-ink-lighter); }
+.swatch-ink::before { background-color: var(--color-ink); }
+.swatch-ink-light::before { background-color: var(--color-ink-light); }
+.swatch-ink-lighter::before { background-color: var(--color-ink-lighter); }
 
-.swatch-black:before { background-color: var(--color-black); }
-.swatch-white:before { background-color: var(--color-white); }
+.swatch-black::before { background-color: var(--color-black); }
+.swatch-white::before { background-color: var(--color-white); }
 
-.swatch-link:before { background-color: var(--color-link); }
-.swatch-link-hover:before { background-color: var(--color-link-hover); }
-.swatch-link-visited:before { background-color: var(--color-link-visited); }
-.swatch-link-visited-hover:before { background-color: var(--color-link-visited-hover); }
+.swatch-link::before { background-color: var(--color-link); }
+.swatch-link-hover::before { background-color: var(--color-link-hover); }
+.swatch-link-visited::before { background-color: var(--color-link-visited); }
+.swatch-link-visited-hover::before { background-color: var(--color-link-visited-hover); }
