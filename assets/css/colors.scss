@@ -16,6 +16,11 @@
     padding-top: 210px;
     text-align: center;
 
+    .val {
+        display: block;
+        font-family: var(--code-font-family);
+    }
+
     &::before {
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: 100%;
