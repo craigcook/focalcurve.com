@@ -25,3 +25,9 @@
         color: var(--color-link-visited-hover);
     }
 }
+
+a:focus-visible {
+    outline-offset: 0.2em;
+    outline-width: 0.2em;
+    outline-color: currentColor;
+}

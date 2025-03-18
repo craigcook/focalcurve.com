@@ -13,7 +13,7 @@
 .swatch {
     box-sizing: border-box;
     position: relative;
-    padding-top: 210px;
+    padding-top: 110px;
     text-align: center;
 
     .val {
@@ -26,13 +26,23 @@
         border-radius: 100%;
         content: '';
         display: block;
-        height: 200px;
+        height: 100px;
         left: 50%;
-        margin-left: -100px;
+        margin-left: -50px;
         position: absolute;
         top: 0;
-        width: 200px;
+        width: 100px;
         outline: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    @media #{$mq-md} {
+        padding-top: 210px;
+
+        &::before {
+            width: 200px;
+            height: 200px;
+            margin-left: -100px;
+        }
     }
 }
 
@@ -40,6 +50,11 @@
 .swatch-blue-dark::before { background-color: var(--color-blue-dark); }
 .swatch-blue-darker::before { background-color: var(--color-blue-darker); }
 .swatch-blue-light::before { background-color: var(--color-blue-light); }
+
+.swatch-green::before { background-color: var(--color-green); }
+.swatch-green-dark::before { background-color: var(--color-green-dark); }
+.swatch-green-darker::before { background-color: var(--color-green-darker); }
+.swatch-green-light::before { background-color: var(--color-green-light); }
 
 .swatch-orange::before { background-color: var(--color-orange); }
 .swatch-orange-dark::before { background-color: var(--color-orange-dark); }
