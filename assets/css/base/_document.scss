@@ -1,8 +1,8 @@
 @use '../includes/lib' as *;
 
 html {
-    font-size: var(--base-font-size);
     background: var(--color-cream);
+    font-size: var(--base-font-size);
     scroll-behavior: smooth;
 
     @media (prefers-reduced-motion: reduce) {
@@ -16,6 +16,7 @@ body {
     color: var(--color-ink);
     font-family: var(--base-font-family);
     line-height: var(--body-line-height);
+    text-wrap: pretty;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }

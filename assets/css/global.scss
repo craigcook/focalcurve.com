@@ -8,13 +8,13 @@
 @use "components/containers";
 
 .site-header {
-    padding: var(--spacing-md) 0;
     border-bottom: 2px solid var(--color-cream-dark);
+    padding: var(--spacing-md) 0;
 }
 
 .site-footer {
-    padding: var(--spacing-md) 0;
     border-top: 2px solid var(--color-cream-dark);
+    padding: var(--spacing-md) 0;
 }
 
 @media (prefers-color-scheme: dark) {

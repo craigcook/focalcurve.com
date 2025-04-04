@@ -7,35 +7,36 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--title-font-family);
-    line-height: var(--title-line-height);
     color: var(--title-text-color);
+    font-family: var(--title-font-family);
     font-weight: bold;
+    line-height: var(--title-line-height);
     margin: 0 0 0.5em;
+    text-wrap: balance;
 }
 
 // Type scale mixins can be found in includes/mixins/_typography.scss
 // Sizes are defined in includes/_tokens.scss
 h1 {
-    @include text-title-lg;
+    @include text-title-xl;
 }
 
 h2 {
-    @include text-title-md;
+    @include text-title-lg;
 }
 
 h3 {
-    @include text-title-sm;
+    @include text-title-md;
 }
 
 h4 {
-    @include text-title-xs;
+    @include text-title-sm;
 }
 
 h5 {
-    @include text-title-2xs;
+    @include text-title-xs;
 }
 
 h6 {
-    @include text-title-3xs;
+    @include text-title-2xs;
 }
