@@ -83,7 +83,7 @@
     backdrop-filter: blur(5px);
     background: #000a;
     box-sizing: border-box;
-    color: var(--color-white);
+    color: var(--color-cream);
     font-size: var(--body-sm);
     left: 8%;
     margin: 0 auto;
@@ -134,6 +134,7 @@
 }
 
 .fc5-c-gallery-tile-title {
+    color: var(--color-cream);
     font-size: var(--title-sm);
     margin-bottom: 0.25em;
 }

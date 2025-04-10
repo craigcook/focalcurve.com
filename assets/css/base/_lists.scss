@@ -16,11 +16,7 @@ ul.fc5-u-list-styled {
         margin-bottom: 0.25em;
 
         &::marker {
-            color: var(--color-blue-dark);
-
-            @media (prefers-color-scheme: dark) {
-                color: var(--color-orange);
-            }
+            color: var(--accent-color-primary);
         }
     }
 

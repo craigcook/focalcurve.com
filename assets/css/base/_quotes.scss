@@ -1,7 +1,7 @@
 @use '../includes/lib' as *;
 
 blockquote {
-    border-color: var(--color-orange);
+    border-color: var(--accent-color-primary);
     border-style: solid;
     border-width: 0 0 0 5px;
     font-size: var(--body-xl);

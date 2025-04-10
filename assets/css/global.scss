@@ -6,20 +6,5 @@
 
 // component styles
 @use "components/containers";
-
-.site-header {
-    border-bottom: 2px solid var(--color-cream-dark);
-    padding: var(--spacing-md) 0;
-}
-
-.site-footer {
-    border-top: 2px solid var(--color-cream-dark);
-    padding: var(--spacing-md) 0;
-}
-
-@media (prefers-color-scheme: dark) {
-    .site-header,
-    .site-footer {
-        border-color: var(--color-ink-light);
-    }
-}
+@use "components/navigation";
+@use "components/footer";

@@ -16,15 +16,11 @@ code {
 }
 
 hr {
-    border: 0 solid var(--color-cream-darker);
+    border: 0 solid var(--background-color-tertiary);
     border-top-width: 4px;
     margin: var(--layout-md) 0;
 
     @media #{$mq-lg} {
         margin: var(--layout-lg) 0;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        border-color: var(--color-ink-lighter);
     }
 }

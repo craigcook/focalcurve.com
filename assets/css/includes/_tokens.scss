@@ -82,13 +82,6 @@
     --base-font-size: 18px;
     --title-line-height: 1.125;
     --body-line-height: 1.4;
-
-    @media (prefers-color-scheme: dark) {
-        --color-link: #88d1f1;
-        --color-link-hover: #c3e8f8;
-        --color-link-visited: #dbaaea;
-        --color-link-visited-hover: #d590ea;
-    }
 }
 
 // media queries

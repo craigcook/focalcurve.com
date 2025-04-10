@@ -16,13 +16,9 @@
 
     th,
     td {
-        border-top: 2px solid var(--color-orange-light);
+        border-top: 2px solid var(--accent-color-secondary);
         padding: 0.5em 10px;
         text-align: left;
-
-        @media (prefers-color-scheme: dark) {
-            border-color: var(--color-blue-dark);
-        }
     }
 
     thead th,

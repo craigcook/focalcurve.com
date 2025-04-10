@@ -1,0 +1,27 @@
+:root {
+    // theme properties
+    --background-color-primary: var(--color-cream);
+    --background-color-secondary: var(--color-cream-dark);
+    --background-color-tertiary: var(--color-cream-darker);
+    --accent-color-primary: var(--color-orange);
+    --accent-color-secondary: var(--color-orange-light);
+    --text-color-primary: var(--color-ink);
+    --text-color-secondary: var(--color-ink-light);
+    --text-color-accent: var(--color-blue-dark);
+
+    @media (prefers-color-scheme: dark) {
+        --color-link: #88d1f1;
+        --color-link-hover: #c3e8f8;
+        --color-link-visited: #dbaaea;
+        --color-link-visited-hover: #d590ea;
+
+        --background-color-primary: var(--color-ink);
+        --background-color-secondary: var(--color-ink-light);
+        --background-color-tertiary: var(--color-ink-lighter);
+        --accent-color-primary: var(--color-blue);
+        --accent-color-secondary: var(--color-blue-dark);
+        --text-color-primary: var(--color-cream);
+        --text-color-secondary: var(--color-cream-dark);
+        --text-color-accent: var(--color-orange);
+    }
+}

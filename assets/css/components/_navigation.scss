@@ -1,0 +1,6 @@
+@use '../includes/lib' as *;
+
+.fc5-c-navigation {
+    border-bottom: 2px solid var(--accent-color-secondary);
+    padding: var(--spacing-md) 0;
+}

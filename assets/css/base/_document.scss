@@ -1,7 +1,7 @@
 @use '../includes/lib' as *;
 
 html {
-    background: var(--color-cream);
+    background-color: var(--background-color-primary);
     font-size: var(--base-font-size);
     scroll-behavior: smooth;
 
@@ -13,21 +13,10 @@ html {
 body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background: var(--color-cream);
-    color: var(--color-ink);
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary);
     font-family: var(--base-font-family);
     font-size: var(--body-md);
     line-height: var(--body-line-height);
     text-wrap: pretty;
-}
-
-@media (prefers-color-scheme: dark) {
-    html {
-        background: var(--color-ink);
-    }
-
-    body {
-        background: var(--color-ink);
-        color: var(--color-cream);
-    }
 }
