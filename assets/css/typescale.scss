@@ -1,20 +1,21 @@
 @use "includes/lib" as *;
 
-.title-2xl { @include text-title-2xl; }
-.title-xl { @include text-title-xl; }
-.title-lg { @include text-title-lg; }
-.title-md { @include text-title-md; }
-.title-sm { @include text-title-sm; }
-.title-xs { @include text-title-xs; }
-.body-xl { @include text-body-xl; }
-.body-lg { @include text-body-lg; }
-.body-md { @include text-body-md; }
-.body-sm { @include text-body-sm; }
+.title-2xl { font-size: var(--title-2xl); }
+.title-xl { font-size: var(--title-xl); }
+.title-lg { font-size: var(--title-lg); }
+.title-md { font-size: var(--title-md); }
+.title-sm { font-size: var(--title-sm); }
+.title-xs { font-size: var(--title-xs); }
+.body-xl { font-size: var(--body-xl); }
+.body-lg { font-size: var(--body-lg); }
+.body-md { font-size: var(--body-md); }
+.body-sm { font-size: var(--body-sm); }
+.body-xs { font-size: var(--body-xs); }
 
 .accent { @include font-accent; }
 
 .label {
-    @include text-body-sm;
+    font-size: var(--body-sm);
     color: var(--color-blue-dark);
 
     @media (prefers-color-scheme: dark) {

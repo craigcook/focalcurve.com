@@ -11,14 +11,14 @@ html {
 }
 
 body {
-    @include text-body-md;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     background: var(--color-cream);
     color: var(--color-ink);
     font-family: var(--base-font-family);
+    font-size: var(--body-md);
     line-height: var(--body-line-height);
     text-wrap: pretty;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-color-scheme: dark) {

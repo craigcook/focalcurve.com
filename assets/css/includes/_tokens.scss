@@ -68,19 +68,17 @@
     --screen-xl: 1312px; // contend-xl + 128px
 
     // font sizes
-    --title-2xl-size: 3.8rem;
-    --title-xl-size: 3.1rem;
-    --title-lg-size: 2.4rem;
-    --title-md-size: 2rem;
-    --title-sm-size: 1.5rem;
-    --title-xs-size: 1.25rem;
-    --title-2xs-size: 1rem;
-    --title-3xs-size: 0.8rem;
-    --body-xl-size: 1.5rem;
-    --body-lg-size: 1.25rem;
-    --body-md-size: 1rem;
-    --body-sm-size: 0.8rem;
-    --body-xs-size: 0.65rem;
+    --title-xs: clamp(1.17rem, 0.49vi + 1.05rem, 1.44rem);
+    --title-sm: clamp(1.41rem, 0.72vi + 1.23rem, 1.8rem);
+    --title-md: clamp(1.69rem, 1.02vi + 1.43rem, 2.25rem);
+    --title-lg: clamp(2.02rem, 1.43vi + 1.67rem, 2.81rem);
+    --title-xl: clamp(2.43rem, 1.97vi + 1.94rem, 3.52rem);
+    --title-2xl: clamp(2.92rem, 2.69vi + 2.24rem, 4.39rem);
+    --body-xs: clamp(0.78rem, 0.03vi + 0.77rem, 0.8rem);
+    --body-sm: clamp(0.94rem, 0.11vi + 0.91rem, 1rem);
+    --body-md: clamp(1.13rem, 0.23vi + 1.07rem, 1.25rem);
+    --body-lg: clamp(1.35rem, 0.39vi + 1.25rem, 1.56rem);
+    --body-xl: clamp(1.62rem, 0.61vi + 1.47rem, 1.95rem);
     --base-font-size: 18px;
     --title-line-height: 1.125;
     --body-line-height: 1.4;

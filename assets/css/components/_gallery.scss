@@ -84,9 +84,10 @@
     background: #000a;
     box-sizing: border-box;
     color: var(--color-white);
+    font-size: var(--body-sm);
     left: 8%;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 80%;
     padding: var(--spacing-lg) var(--spacing-xl);
     position: absolute;
     top: var(--spacing-lg);
@@ -133,13 +134,13 @@
 }
 
 .fc5-c-gallery-tile-title {
+    font-size: var(--title-sm);
     margin-bottom: 0.25em;
-    @include text-title-sm;
 }
 
 .fc5-c-gallery-tile-tag {
+    font-size: var(--body-xs);
     margin-bottom: 0.5em;
-    @include text-body-sm;
     text-transform: lowercase;
 }
 
