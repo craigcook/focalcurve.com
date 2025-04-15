@@ -4,3 +4,10 @@
     border-top: 2px solid var(--accent-color-secondary);
     padding: var(--spacing-md) 0;
 }
+
+.fc5-c-footer-menu {
+    display: flex;
+    font-size: var(--body-sm);
+    gap: var(--spacing-lg);
+    margin: 0;
+}

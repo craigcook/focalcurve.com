@@ -1,0 +1,18 @@
+@use '../includes/lib' as *;
+
+.fc5-c-figure {
+    &.fc5-l-align-end {
+        float: right;
+        margin: 0 0 var(--spacing-md) var(--spacing-md);
+    }
+
+    &.fc5-l-align-start {
+        float: left;
+        margin: 0 var(--spacing-md) var(--spacing-md) 0;
+    }
+
+    &.fc5-l-align-center {
+        display: block;
+        margin: 0 auto var(--spacing-lg);
+    }
+}

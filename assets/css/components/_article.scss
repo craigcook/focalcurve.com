@@ -1,0 +1,23 @@
+@use '../includes/lib' as *;
+
+.fc5-c-article {
+    @media #{$mq-md} {
+        display: grid;
+        gap: 0 var(--spacing-md);
+        grid-template-columns: 20% 1fr;
+    }
+}
+
+.fc5-c-article-header {
+    border-bottom: 2px solid var(--accent-color-secondary);
+    margin-bottom: var(--layout-md);
+    grid-column: 2;
+}
+
+.fc5-c-article-info {
+    font-size: var(--body-sm);
+}
+
+.fc5-c-article-body {
+    grid-column: 2;
+}

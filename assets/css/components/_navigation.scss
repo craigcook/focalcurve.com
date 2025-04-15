@@ -4,3 +4,20 @@
     border-bottom: 2px solid var(--accent-color-secondary);
     padding: var(--spacing-md) 0;
 }
+
+.fc5-c-navigation-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fc5-c-navigation-logo {
+    grid-column: 1;
+}
+
+.fc5-c-navigation-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+    grid-column: 2;
+    justify-self: end;
+    margin: 0;
+}
