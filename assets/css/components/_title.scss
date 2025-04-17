@@ -1,0 +1,63 @@
+@use "../includes/lib" as *;
+
+.fc5-c-site-header {
+    display: grid;
+    filter: drop-shadow(6px 8px 0 rgba(0, 0, 0, 0.05));
+    grid-template-rows: repeat(2, fit-content);
+    width: fit-content;
+    margin-bottom: var(--layout-md);
+    position: relative;
+
+    .fc5-c-site-title {
+        background: var(--color-blue) linear-gradient(to bottom right, var(--color-blue-light) -20%, var(--color-blue));
+        clip-path: polygon(0 0, 100% 3%, 96% 100%, 5% 94%);
+        color: var(--color-cream);
+        display: inline-block;
+        font-size: var(--title-2xl);
+        margin: 0;
+        padding: 30px 50px;
+        text-shadow: 2px 3px 0 var(--color-blue-dark);
+        width: fit-content;
+    }
+
+    .fc5-c-site-tagline {
+        background: var(--color-orange-light) linear-gradient(to bottom right, var(--color-orange-light) -20%, var(--color-orange));
+        clip-path: polygon(5% 5%, 95% 0, 100% 94%, 2% 92%);
+        color: var(--color-ink-lighter);
+        display: inline-block;
+        font-family: var(--accent-font-family);
+        font-size: var(--title-md);
+        justify-self: end;
+        line-height: var(--body-line-height);
+        margin: -30px 0 0;
+        padding: 15px 40px;
+        position: relative;
+        right: 20px;
+        text-shadow: 1px 2px 0 var(--color-orange);
+        width: fit-content;
+    }
+
+    @media #{$mq-md} {
+        left: -40px;
+
+        .fc5-c-site-tagline {
+            right: -20px;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        filter: drop-shadow(6px 8px 0 var(--color-black));
+
+        .fc5-c-site-title {
+            background: var(--color-green) linear-gradient(to bottom right, var(--color-green), var(--color-green-dark) 200%);
+            color: var(--color-white);
+            text-shadow: 3px 3px 0 var(--color-green-dark);
+        }
+
+        .fc5-c-site-tagline {
+            background: var(--color-red) linear-gradient(to bottom right, var(--color-red) -20%, var(--color-red-dark) 120%);
+            color: var(--color-ink);
+            text-shadow: 2px 2px 0 var(--color-red-dark);
+        }
+    }
+}

@@ -4,9 +4,7 @@
 // base styles
 @use "base/base";
 
-// component styles
+// global component styles
 @use "components/containers";
 @use "components/navigation";
 @use "components/footer";
-@use "components/article";
-@use "components/figure";

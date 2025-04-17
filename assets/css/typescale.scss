@@ -1,18 +1,18 @@
 @use "includes/lib" as *;
 
-.title-2xl { font-size: var(--title-2xl); }
-.title-xl { font-size: var(--title-xl); }
-.title-lg { font-size: var(--title-lg); }
-.title-md { font-size: var(--title-md); }
-.title-sm { font-size: var(--title-sm); }
-.title-xs { font-size: var(--title-xs); }
-.body-xl { font-size: var(--body-xl); }
-.body-lg { font-size: var(--body-lg); }
-.body-md { font-size: var(--body-md); }
-.body-sm { font-size: var(--body-sm); }
-.body-xs { font-size: var(--body-xs); }
+.title-2xl { font-family: var(--title-font-family); font-size: var(--title-2xl); }
+.title-xl { font-family: var(--title-font-family); font-size: var(--title-xl); }
+.title-lg { font-family: var(--title-font-family); font-size: var(--title-lg); }
+.title-md { font-family: var(--title-font-family); font-size: var(--title-md); }
+.title-sm { font-family: var(--title-font-family); font-size: var(--title-sm); }
+.title-xs { font-family: var(--title-font-family); font-size: var(--title-xs); }
+.body-xl { font-family: var(--base-font-family); font-size: var(--body-xl); }
+.body-lg { font-family: var(--base-font-family); font-size: var(--body-lg); }
+.body-md { font-family: var(--base-font-family); font-size: var(--body-md); }
+.body-sm { font-family: var(--base-font-family); font-size: var(--body-sm); }
+.body-xs { font-family: var(--base-font-family); font-size: var(--body-xs); }
 
-.accent { @include font-accent; }
+.accent { font-family: var(--accent-font-family); font-weight: normal; }
 
 .label {
     font-size: var(--body-sm);
