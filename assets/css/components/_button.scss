@@ -1,0 +1,124 @@
+@use '../includes/lib' as *;
+
+// * -------------------------------------------------------------------------- */
+// Button shape and size
+
+.fc5-c-button, /* stylelint-disable-line no-duplicate-selectors */
+a.fc5-c-button {
+    transition: background-color 100ms ease, box-shadow 100ms ease, color 100ms ease, left 100ms ease, top 100ms ease;
+    border-radius: 0;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--base-font-family);
+    font-weight: bold;
+    line-height: var(--body-line-height);
+    padding: 6px var(--spacing-lg);
+    text-align: center;
+    text-decoration: none !important;  /* stylelint-disable-line declaration-no-important */
+    box-shadow: 4px 5px 0 var(--color-cream-dark);
+    color: var(--color-blue-darker);
+    background-color: var(--color-blue);
+    position: relative;
+    left: 0;
+    top: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--color-blue-light);
+        color: var(--color-blue-darker);
+        box-shadow: 6px 7px 0 var(--color-cream-dark);
+        outline-offset: 1px;
+        left: -1px;
+        top: -1px;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--color-orange);
+        color: var(--color-orange-darker);
+        box-shadow: 4px 5px 0 var(--color-black);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--color-orange-light);
+            color: var(--color-orange-darker);
+            box-shadow: 6px 7px 0 var(--color-black);
+        }
+    }
+}
+
+// Sizes
+
+.fc5-c-button.fc5-t-sm {
+    font-size: var(--body-xs);
+    padding: 1px var(--spacing-md);
+}
+
+.fc5-c-button.fc5-t-md {
+    font-size: var(--body-sm);
+    padding: var(--spacing-xs) var(--spacing-lg);
+}
+
+.fc5-c-button.fc5-t-lg {
+    font-size: var(--body-lg);
+    padding: 6px var(--spacing-lg);
+}
+
+.fc5-c-button.fc5-t-xl {
+    font-size: var(--body-lg);
+    padding: 10px var(--spacing-lg);
+}
+
+
+// * -------------------------------------------------------------------------- */
+// Secondary
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.fc5-c-button,
+a.fc5-c-button {
+    &.fc5-t-secondary {
+        background-color: transparent;
+        border-color: var(--text-color-primary);
+        color: var(--text-color-primary);
+    }
+}
+
+// * -------------------------------------------------------------------------- */
+// Icon
+
+.fc5-c-button-icon-start,
+.fc5-c-button-icon-end {
+    display: inline-block;
+    font-size: 1em;
+    height: 1em;
+    line-height: 1em;
+    vertical-align: baseline;
+    width: 1em;
+
+    img,
+    svg {
+        height: 100%;
+        margin-bottom: -0.15em;
+        width: 100%;
+    }
+}
+
+.fc5-c-button-icon-start {
+    margin-inline-end: 0.5ch;
+}
+
+.fc5-c-button-icon-end {
+    margin-inline-start: 0.5ch;
+}
+

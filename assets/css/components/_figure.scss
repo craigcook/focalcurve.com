@@ -1,18 +1,32 @@
 @use '../includes/lib' as *;
 
 .fc5-c-figure {
-    &.fc5-l-align-end {
-        float: right;
-        margin: 0 0 var(--spacing-md) var(--spacing-md);
+    display: block;
+    margin: 0 auto var(--spacing-lg);
+    text-align: center;
+
+    figcaption {
+        font-size: var(--body-sm);
+        font-style: italic;
     }
 
-    &.fc5-l-align-start {
-        float: left;
-        margin: 0 var(--spacing-md) var(--spacing-md) 0;
-    }
+    @media #{$mq-md} {
+        margin-bottom: var(--spacing-sm);
 
-    &.fc5-l-align-center {
-        display: block;
-        margin: 0 auto var(--spacing-lg);
+        &.fc5-l-align-end {
+            float: inline-end;
+            margin-inline-end: calc(var(--layout-md) * -1);
+            margin-inline-start: var(--spacing-md);
+        }
+
+        &.fc5-l-align-start {
+            float: inline-start;
+            margin-inline-end: var(--spacing-md);
+            margin-inline-start: calc(var(--layout-md) * -1);
+        }
+
+        &.fc5-l-align-center {
+            margin-bottom: var(--spacing-xl);
+        }
     }
 }

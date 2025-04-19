@@ -1,15 +1,80 @@
-{% extends "base.html" %}
+{% extends "article-base.html" %}
 
 {% block page_title %}CSS Grid demo : Work : Focal Curve{% endblock %}
 {% block page_desc %}{% endblock %}
 
-{% block page_css %}{% endblock %}
+{% block article_header %}
+    <h1 class="fc5-c-article-title">CSS Grid demo</h1>
+    <p class="fc5-c-article-info">March, 2017</p>
+{% endblock %}
 
-{% block content %}
+{% block article_body %}
+  <p>Support for <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout" rel="external">CSS grid layout</a>
+    landed in
+    <a href="https://www.mozilla.org/firefox/52.0/releasenotes/" rel="external">Firefox 52.0, released on March 6, 2017</a>
+    after years of effort. Firefox was the first major browser to ship grid
+    support, though Chrome followed very quickly after. To promote Firefox to web
+    developers we created a page showcasing what can be done with CSS grid, along
+    with links to developer resources to learn more about it.</p>
 
-<div class="fc5-l-content fc5-t-content-md">
-  <h1 class="title">I made a demo page for CSS grid</h1>
+  <picture class="fc5-c-figure fc5-l-align-center">
+    <source media="(max-width: 799px)" srcset="/assets/img/work/css-grid/example-800.png" width="800" height="451">
+    <source media="(min-width: 800px)" srcset="/assets/img/work/css-grid/example-1200.png" width="1200" height="676">
+    <img loading="lazy" src="/assets/img/work/css-grid/example-800.png" width="800" height="451" alt="Screenshot of a CSS grid example.">
+  </picture>
 
-</div>
+  <p>Of course, I had to learn CSS grid layout myself in order to build a page about
+    CSS grid layout, so that was fun. I confess I continued to refer to the page
+    for a long time afterward to remind myself of different syntax bits every time
+    I did anything with grid. This page turned out not to just be a nice demo of
+    a new CSS standard, but a useful educational resource.</p>
 
+  <p>At the time, grid layout was only supported in the latest version of Firefox,
+    and other browsers didn’t fully support it at all yet, so the page also needed
+    to degrade gracefully in non-grid browsers that couldn’t show the live examples.
+    The page is progressively enhanced with liberal application of <code>@supports</code>
+    and older browsers get screenshots of what they’re missing.</p>
+
+  <figure class="fc5-c-figure fc5-l-align-center">
+    <picture>
+      <source media="(max-width: 799px)" srcset="/assets/img/work/css-grid/fallback-800.png" width="800" height="391">
+      <source media="(min-width: 800px)" srcset="/assets/img/work/css-grid/fallback-1200.png" width="1200" height="587">
+      <img loading="lazy" src="/assets/img/work/css-grid/fallback-800.png" width="800" height="391" alt="Screenshot of a what a grid layout demo should look like in a supporting browser, with a prompt to view the page in the latest version of Firefox.">
+    </picture>
+    <figcaption>An example of a fallback image shown to browsers that don’t support grid.</figcaption>
+  </figure>
+
+  <p>The fancy geometric header is itself built with CSS grid with a handful of
+    presentational elements to render some of the decorative blocks.</p>
+
+  <figure class="fc5-c-figure fc5-l-align-center">
+    <picture>
+      <source media="(max-width: 799px)" srcset="/assets/img/work/css-grid/header-800.png" width="800" height="383">
+      <source media="(min-width: 800px)" srcset="/assets/img/work/css-grid/header-1200.png" width="1200" height="575">
+      <img loading="lazy" src="/assets/img/work/css-grid/header-800.png" width="800" height="383" alt="Screenshot of the page header with the browser's grid inspector active, showing the grid layout as an overlay of purple guidelines.">
+    </picture>
+    <figcaption>The page header with the grid inspector active, showing the layout guidelines.</figcaption>
+  </figure>
+
+  <p>The page is responsive but optimized for larger viewports so it isn’t an ideal
+    experience on mobile devices. It also relies on jQuery since we were still
+    using that at the time, but it could easily be refactored with vanilla
+    JavaScript.</p>
+
+  <p>The page was decommissioned in 2019, by which time CSS grid was well supported
+    across all current browsers. The version of the page you see here is slightly
+    modified from the original to remove some superfluous analytics and a few
+    Firefox-specific things (there was a big “Download Firefox” sticky banner
+    displayed in non-Firefox browsers; this was a marketing page, after all).</p>
+
+  <p>
+    <a href="/work/css-grid/demo/" class="fc5-c-button">
+      See the demo
+      <span class="fc5-c-button-icon-end">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path d="M14.8 7.7 9.3 2.2 8.2 3.3l4.2 4.2H1V9h11.4l-4.2 4.2 1.1 1.1 5.5-5.5c.1-.2.2-.4.2-.6s-.1-.3-.2-.5z" />
+        </svg>
+    </span>
+    </a>
+  </p>
 {% endblock %}

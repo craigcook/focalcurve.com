@@ -2,7 +2,7 @@
 
 .fc5-c-site-header {
     display: grid;
-    filter: drop-shadow(6px 8px 0 rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(6px 8px 0 var(--color-cream-dark));
     grid-template-rows: repeat(2, fit-content);
     width: fit-content;
     margin-bottom: var(--layout-md);
@@ -23,7 +23,7 @@
     .fc5-c-site-tagline {
         background: var(--color-orange-light) linear-gradient(to bottom right, var(--color-orange-light) -20%, var(--color-orange));
         clip-path: polygon(5% 5%, 95% 0, 100% 94%, 2% 92%);
-        color: var(--color-ink-lighter);
+        color: var(--color-orange-darker);
         display: inline-block;
         font-family: var(--accent-font-family);
         font-size: var(--title-md);
@@ -33,7 +33,7 @@
         padding: 15px 40px;
         position: relative;
         right: 20px;
-        text-shadow: 1px 2px 0 var(--color-orange);
+        text-shadow: 1px 2px 0 rgba(195, 95, 0, 0.25);
         width: fit-content;
     }
 
@@ -56,8 +56,8 @@
 
         .fc5-c-site-tagline {
             background: var(--color-red) linear-gradient(to bottom right, var(--color-red) -20%, var(--color-red-dark) 120%);
-            color: var(--color-ink);
-            text-shadow: 2px 2px 0 var(--color-red-dark);
+            color: var(--color-red-darker);
+            text-shadow: 1px 2px 0 var(--color-red-dark);
         }
     }
 }
