@@ -1,15 +1,45 @@
-{% extends "base.html" %}
+{% extends "article-base.html" %}
 
-{% block page_title %}Santa Locator : Work : Focal Curve{% endblock %}
+{% block page_title %}CSS Grid demo : Work : Focal Curve{% endblock %}
 {% block page_desc %}{% endblock %}
 
-{% block page_css %}{% endblock %}
+{% block article_header %}
+    <h1 class="fc5-c-article-title">Santa Locator</h1>
+    <p class="fc5-c-article-info">December, 2022</p>
+{% endblock %}
 
-{% block content %}
+{% block article_body %}
+  <p>This was a simple little landing page for a fun social media thing promoting
+    Mozilla VPN around the 2022 holidays. The “Earthwide Location Framework” is,
+    of course, imaginary. A little progress bar animates with a semi-randomized
+    delay before seeming to time out and display an error message.</p>
 
-<div class="fc5-l-content fc5-t-content-md">
-  <h1 class="title">I made a jokey Santa locator for Mozilla VPN</h1>
+  <picture class="fc5-c-figure fc5-l-align-center">
+    <source media="(max-width: 799px)" srcset="/assets/img/work/santa-locator/progress-800.jpg" width="800" height="289">
+    <source media="(min-width: 800px)" srcset="/assets/img/work/santa-locator/progress-1200.jpg" width="1200" height="433">
+    <img loading="lazy" src="/assets/img/work/santa-locator/progress-800.jpg" width="800" height="289" alt="Screenshot of the mock progress bar while.">
+  </picture>
 
-</div>
+  <p>The little cartoon red panda (dubbed <cite>Panda Clause</cite>) was initially
+    delivered as a GIF but that turned out to be a pretty huge file. Efforts to
+    optimize the file size reduced the image quality to an unacceptable level.
+    In the end a CSS sprite animation was the most performant way to bring this
+    cozy fella to life.</p>
 
+  <picture class="fc5-c-figure fc5-l-align-center">
+    <source media="(max-width: 799px)" srcset="/assets/img/work/santa-locator/sprite-800.png" width="800" height="232">
+    <source media="(min-width: 800px)" srcset="/assets/img/work/santa-locator/sprite-1200.png" width="1200" height="348">
+    <img loading="lazy" src="/assets/img/work/santa-locator/sprite-800.png" width="800" height="232" alt="A segment of the Panda Clause sprite image.">
+  </picture>
+
+  <p>
+    <a href="/work/santa-locator/demo/" class="fc5-c-button">
+      See the demo
+      <span class="fc5-c-button-icon-end">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+            <path d="M14.8 7.7 9.3 2.2 8.2 3.3l4.2 4.2H1V9h11.4l-4.2 4.2 1.1 1.1 5.5-5.5c.1-.2.2-.4.2-.6s-.1-.3-.2-.5z" />
+        </svg>
+    </span>
+    </a>
+  </p>
 {% endblock %}
