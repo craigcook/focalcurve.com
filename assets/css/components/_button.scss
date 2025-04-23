@@ -16,7 +16,7 @@ a.fc5-c-button {
     padding: 6px var(--spacing-lg);
     text-align: center;
     text-decoration: none !important;  /* stylelint-disable-line declaration-no-important */
-    box-shadow: 4px 5px 0 var(--color-cream-dark);
+    box-shadow: 4px 5px 0 var(--shadow-color);
     color: var(--color-blue-darker);
     background-color: var(--color-blue);
     position: relative;
@@ -28,7 +28,7 @@ a.fc5-c-button {
     &:active {
         background-color: var(--color-blue-light);
         color: var(--color-blue-darker);
-        box-shadow: 6px 7px 0 var(--color-cream-dark);
+        box-shadow: 6px 7px 0 var(--shadow-color);
         outline-offset: 1px;
         left: -1px;
         top: -1px;
@@ -46,14 +46,12 @@ a.fc5-c-button {
     @media (prefers-color-scheme: dark) {
         background-color: var(--color-orange);
         color: var(--color-orange-darker);
-        box-shadow: 4px 5px 0 var(--color-black);
 
         &:hover,
         &:focus,
         &:active {
             background-color: var(--color-orange-light);
             color: var(--color-orange-darker);
-            box-shadow: 6px 7px 0 var(--color-black);
         }
     }
 }

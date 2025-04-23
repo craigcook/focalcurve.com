@@ -2,7 +2,7 @@
 
 .fc5-c-site-header {
     display: grid;
-    filter: drop-shadow(6px 8px 0 #e4d7c566);
+    filter: drop-shadow(6px 8px 0 var(--shadow-color));
     grid-template-rows: repeat(2, fit-content);
     width: fit-content;
     margin: 0 auto var(--layout-md);
@@ -46,8 +46,6 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        filter: drop-shadow(6px 8px 0 #0006);
-
         .fc5-c-site-title {
             background: var(--color-green) linear-gradient(to bottom right, var(--color-green), var(--color-green-dark) 200%);
             color: var(--color-white);
