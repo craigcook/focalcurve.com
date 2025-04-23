@@ -5,7 +5,7 @@
 
 .fc5-c-button, /* stylelint-disable-line no-duplicate-selectors */
 a.fc5-c-button {
-    transition: background-color 100ms ease, box-shadow 100ms ease, color 100ms ease, left 100ms ease, top 100ms ease;
+    transition: background-color 100ms ease, box-shadow 100ms ease, color 100ms ease;
     border-radius: 0;
     border: 2px solid transparent;
     cursor: pointer;
@@ -19,9 +19,6 @@ a.fc5-c-button {
     box-shadow: 4px 5px 0 var(--shadow-color);
     color: var(--color-blue-darker);
     background-color: var(--color-blue);
-    position: relative;
-    left: 0;
-    top: 0;
 
     &:hover,
     &:focus,
@@ -30,8 +27,6 @@ a.fc5-c-button {
         color: var(--color-blue-darker);
         box-shadow: 6px 7px 0 var(--shadow-color);
         outline-offset: 1px;
-        left: -1px;
-        top: -1px;
     }
 
     &::-moz-focus-inner {

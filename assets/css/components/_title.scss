@@ -49,13 +49,13 @@
         .fc5-c-site-title {
             background: var(--color-green) linear-gradient(to bottom right, var(--color-green), var(--color-green-dark) 200%);
             color: var(--color-white);
-            text-shadow: 3px 3px 0 var(--color-green-dark);
+            text-shadow: 2px 3px 0 var(--color-green-darker);
         }
 
         .fc5-c-site-tagline {
             background: var(--color-red) linear-gradient(to bottom right, var(--color-red) -20%, var(--color-red-dark) 120%);
             color: var(--color-red-darker);
-            text-shadow: 1px 2px 0 var(--color-red-dark);
+            text-shadow: 1px 1px 0 var(--color-red-dark);
         }
     }
 }

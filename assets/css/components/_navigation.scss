@@ -1,23 +1,111 @@
 @use '../includes/lib' as *;
 
 .fc5-c-navigation {
-    border-bottom: 2px solid var(--accent-color-secondary);
+    backdrop-filter: blur(5px);
+    background-color: #fffdf3dd;
+    border-bottom: 2px solid var(--accent-color-primary);
+    box-shadow: 0 2px 0 var(--accent-color-secondary);
     padding: var(--spacing-md) 0;
-}
 
-.fc5-c-navigation-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @media #{$mq-md} and #{$mq-tall} {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #2d2a3bdd;
+    }
 }
 
 .fc5-c-navigation-logo {
+    filter: drop-shadow(2px 4px 0 var(--shadow-color));
+    margin-bottom: var(--spacing-md);
     grid-column: 1;
+
+    :link,
+    :visited {
+        background-color: var(--color-blue);
+        clip-path: polygon(0 0, 100% 1%, 98% 100%, 2% 97%);
+        color: var(--color-cream);
+        display: inline-block;
+        font-family: var(--title-font-family);
+        font-size: var(--body-lg);
+        font-weight: bold;
+        margin: 0;
+        padding: 0 var(--spacing-md);
+        text-decoration: none;
+        text-shadow: 1px 1px 0 var(--color-blue-dark);
+        transition: background-color 100ms ease, color 100ms ease, box-shadow 100ms ease;
+        width: fit-content;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--color-orange);
+            color: var(--color-orange-darker);
+            text-shadow: 1px 1px 0 var(--color-orange-dark);
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :link,
+        :visited {
+            background-color: var(--color-green);
+            text-shadow: 1px 1px 0 var(--color-green-dark);
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: var(--color-red);
+                color: var(--color-red-darker);
+                text-shadow: 1px 1px 0 var(--color-red-dark);
+            }
+        }
+    }
 }
 
 .fc5-c-navigation-menu {
     display: flex;
-    gap: var(--spacing-lg);
-    grid-column: 2;
-    justify-self: end;
+    gap: var(--spacing-sm);
     margin: 0;
+}
+
+.fc5-c-navigation-item {
+    :link,
+    :visited {
+        background-color: var(--background-color-primary);
+        box-shadow: 2px 3px 0 var(--shadow-color);
+        color: var(--text-color-accent);
+        outline: 1px solid var(--shadow-color);
+        padding: 0 var(--spacing-lg);
+        text-decoration: none;
+        transition: background-color 100ms ease, color 100ms ease, box-shadow 100ms ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--accent-color-secondary);
+            box-shadow: 4px 5px 0 var(--shadow-color);
+            color: var(--color-link-hover);
+        }
+    }
+}
+
+@media #{$mq-md} {
+    .fc5-c-navigation-container {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fc5-c-navigation-logo {
+        grid-column: 1;
+        margin-bottom: 0;
+    }
+
+    .fc5-c-navigation-menu {
+        grid-column: 2;
+        justify-self: end;
+    }
 }

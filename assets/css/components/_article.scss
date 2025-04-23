@@ -1,11 +1,28 @@
 @use '../includes/lib' as *;
 
 .fc5-c-article-header {
-    border-bottom: 2px solid var(--accent-color-secondary);
+    border-bottom: 2px solid var(--accent-color-primary);
     margin-bottom: var(--layout-md);
+    position: relative;
+
+    &::after {
+        background: var(--background-color-primary);
+        bottom: -0.575em;
+        color: var(--accent-color-primary);
+        content: "• • •";
+        font-size: 24px;
+        left: 50%;
+        line-height: 1;
+        margin-left: -2ch;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        width: 4ch;
+    }
 }
 
 .fc5-c-article-info {
+    color: var(--text-color-secondary);
     font-size: var(--body-sm);
 
     &:has(+ &) {
