@@ -10,11 +10,7 @@
 {% endblock %}
 
 {% block article_body %}
-  <p>Firefox releases major version updates on a four week rapid-release cycle.
-    The first time Firefox restarts after an update, it automatically loads a
-    web page to let the user know the update was a success. They call it the
-    “What’s New Page” (WNP) and it’s also a prime opportunity to highlight Firefox
-    features or cross-promote other Mozilla products.</p>
+  {% include "includes/wnp-intro.html" %}
 
   <p>For Firefox version 116.0, we wanted to tell users about Reader Mode,
     which strips a long-form page down to the essential content, hiding things

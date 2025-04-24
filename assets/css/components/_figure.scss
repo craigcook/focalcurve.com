@@ -15,18 +15,28 @@
 
         &.fc5-l-align-end {
             float: inline-end;
-            margin-inline-end: calc(var(--layout-md) * -1);
+            margin-inline-end: calc(var(--layout-sm) * -1);
             margin-inline-start: var(--spacing-md);
         }
 
         &.fc5-l-align-start {
             float: inline-start;
             margin-inline-end: var(--spacing-md);
-            margin-inline-start: calc(var(--layout-md) * -1);
+            margin-inline-start: calc(var(--layout-sm) * -1);
         }
 
         &.fc5-l-align-center {
             margin-bottom: var(--spacing-xl);
+        }
+    }
+
+    @media #{$mq-lg} {
+        &.fc5-l-align-end {
+            margin-inline-end: calc(var(--layout-md) * -1);
+        }
+
+        &.fc5-l-align-start {
+            margin-inline-start: calc(var(--layout-md) * -1);
         }
     }
 }
