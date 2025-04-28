@@ -13,6 +13,7 @@ table {
 code {
     font-family: var(--code-font-family);
     font-size: inherit;
+    color: var(--text-color-accent);
 }
 
 hr {
@@ -23,4 +24,8 @@ hr {
     @media #{$mq-lg} {
         margin: var(--layout-lg) 0;
     }
+}
+
+.fc5-t-accent {
+    font-family: var(--accent-font-family);
 }
