@@ -1,0 +1,184 @@
+@use '../includes/lib' as *;
+
+// * -------------------------------------------------------------------------- */
+// Resets
+// many from https://necolas.github.io/normalize.css/
+
+form,
+fieldset,
+legend {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+//  1. Correct the text wrapping in Edge and IE.
+//  2. Correct the color inheritance from `fieldset` elements in IE.
+//  3. Remove the padding so developers are not caught out when they zero out
+//    `fieldset` elements in all browsers.
+legend {
+    box-sizing: border-box; // 1
+    color: inherit; // 2
+    display: table; // 1
+    font-size: var(--body-lg);
+    font-family: var(--base-font-family);
+    font-weight: bold;
+    margin-bottom: var(--spacing-sm);
+    max-width: 100%; // 1
+    padding: 0; // 3
+    white-space: normal; // 1
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+    font-family: var(--base-font-family);
+    font-size: var(--body-md);
+    line-height: 1.25;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    appearance: button;
+}
+
+// Remove the default vertical scrollbar in IE 10+.
+textarea {
+    overflow: auto;
+    height: auto;
+}
+
+// 1. Correct the odd appearance in Chrome and Safari.
+// 2. Correct the outline style in Safari.
+[type='search'] {
+    appearance: textfield; // 1
+    outline-offset: -2px; // 2
+}
+
+// Remove the inner padding in Chrome and Safari on macOS.
+/* stylelint-disable-line value-no-vendor-prefix */
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+// 1. Correct the inability to style clickable types in iOS and Safari.
+// 2. Change font properties to `inherit` in Safari.
+/* stylelint-disable-next-line value-no-vendor-prefix */
+::-webkit-file-upload-button {
+    -webkit-appearance: button; // 1
+    font: inherit; // 2
+}
+
+// 1. Add the correct box sizing in IE 10.
+// 2. Remove the padding in IE 10.
+[type='checkbox'],
+[type='radio'] {
+    box-sizing: border-box; // 1
+    padding: 0; // 2
+    border-radius: 0;
+}
+
+// * -------------------------------------------------------------------------- */
+// Element styles
+
+fieldset {
+    margin-bottom: var(--spacing-sm);
+    min-width: 0; // https://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content
+    width: 100%;
+
+    &.fc5-u-inline {
+        margin-bottom: 0;
+    }
+}
+
+label {
+    font-size: var(--body-md);
+    display: block;
+    font-weight: bold;
+    line-height: var(--body-line-height);
+    margin: 0;
+    padding-bottom: var(--spacing-sm);
+}
+
+// * -------------------------------------------------------------------------- */
+// Inputs & Textarea (excluding checkboxes and radio buttons)
+
+textarea,
+input[list],
+input[type='date'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'] {
+    background-color: var(--background-color-secondary);
+    border-radius: 0;
+    border: 2px solid var(--accent-color-secondary);
+    box-sizing: border-box;
+    color: var(--text-color-primary);
+    font-size: var(--body-md);
+    line-height: 1.25;
+    margin: 0 0 var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+
+    &::placeholder {
+        color: var(--text-color-subtle);
+    }
+
+    &:hover {
+        border-color: var(--accent-color-primary);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color-primary);
+    }
+
+    .fc5-is-error & {
+        border-color: var(--color-red);
+
+        &:hover {
+            border-color: var(--color-red-dark);
+        }
+
+        &:focus {
+            border-color: var(--color-red-dark);
+        }
+    }
+
+    &:disabled,
+    &[aria-disabled='true'] {
+        background: var(--background-color-primary);
+        border-color: var(--background-color-tertiary);
+        color: var(--background-color-tertiary);
+
+        &:focus {
+            border-color: var(--background-color-tertiary);
+        }
+    }
+}
+
+textarea,
+input[type='email'],
+input[list],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'] {
+    min-width: 20ch;
+    max-width: 100%;
+}
+
+textarea[cols],
+input[size] {
+    min-width: 0;
+}

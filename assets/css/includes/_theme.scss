@@ -8,6 +8,7 @@
     --text-color-primary: var(--color-ink);
     --text-color-secondary: var(--color-ink-light);
     --text-color-accent: var(--color-blue-dark);
+    --text-color-subtle: #0004;
     --shadow-color: #e4d7c566;
 
     @media (prefers-color-scheme: dark) {
@@ -24,6 +25,7 @@
         --text-color-primary: var(--color-cream);
         --text-color-secondary: var(--color-cream-dark);
         --text-color-accent: var(--color-orange);
+        --text-color-subtle: #fff4;
         --shadow-color: #0006;
     }
 }

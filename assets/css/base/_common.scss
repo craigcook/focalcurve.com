@@ -29,3 +29,11 @@ hr {
 .fc5-t-accent {
     font-family: var(--accent-font-family);
 }
+
+.fc5-u-hidden {
+    @include hidden;
+}
+
+.fc5-u-visually-hidden {
+    @include visually-hidden;
+}

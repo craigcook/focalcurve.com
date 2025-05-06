@@ -1,0 +1,49 @@
+@use '../includes/lib' as *;
+
+.fc5-c-notification-bar {
+    box-sizing: border-box;
+    font-size: var(--body-sm);
+    background-color: var(--color-blue-light);
+    border-radius: 0;
+    border: 1px;
+    box-shadow: 3px 4px 0 var(--shadow-color);
+    color: black;
+    font-weight: normal;
+    margin: var(--layout-xs) var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-2xl);
+    position: relative;
+    text-align: center;
+
+    @media #{$mq-sm} {
+        margin: var(--layout-xs) auto;
+        max-width: var(--content-md);
+    }
+
+    p {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    a:link,
+    a:visited {
+        color: inherit;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: 700;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &.fc5-t-success {
+        background-color: var(--color-green-light);
+    }
+
+    &.fc5-t-error {
+        background-color: var(--color-red-light);
+    }
+}

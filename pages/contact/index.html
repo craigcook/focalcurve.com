@@ -1,0 +1,56 @@
+
+{% extends "base.html" %}
+
+{% block page_title %}Contact : Focal Curve{% endblock %}
+{% block page_desc %}{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="/assets/css/contact.scss">
+{% endblock %}
+
+{% block content %}
+<div class="fc5-l-content fc5-t-content-md">
+  <h1>Send me a message</h1>
+  <p>Your compliments will be bashfully denied but privately treasured.</p>
+
+  <form action="/contact/handler.php" method="post" class="fc5-l-stretch">
+    <div class="fc5-c-field">
+      <label class="fc5-c-field-label" for="name">Your name <span class="fc5-c-fieldnote">(required)</span></label>
+      <input class="fc5-c-field-control" type="text" value="" name="name" id="name" required aria-required="true">
+    </div>
+
+    <div class="fc5-c-field">
+      <label class="fc5-c-field-label" for="email">Your email address <span class="fc5-c-fieldnote">(required)</span></label>
+      <input class="fc5-c-field-control" type="email" name="email" id="email" value="" placeholder="yourname@example.com" required aria-required="true">
+    </div>
+
+    <div class="fc5-c-field">
+      <label class="fc5-c-field-label" for="subject">Subject <span class="fc5-c-fieldnote">(required)</span></label>
+      <input class="fc5-c-field-control" type="text" name="subject" id="subject" value="" required aria-required="true">
+    </div>
+
+    <div class="fc5-c-field">
+      <label class="fc5-c-field-label" for="message">Your message <span class="fc5-c-fieldnote">(required)</span></label>
+      <textarea class="fc5-c-field-control" id="message" name="message" rows="6" required aria-required="true"></textarea>
+    </div>
+
+    <div class="fc5-c-field fc5-u-visually-hidden" aria-hidden="true">
+      <label for="phone">This field is for spammers only</label>
+      <input type="text" name="phone" id="phone" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div class="fc5-c-field">
+      <button class="fc5-c-button" type="submit">
+        <span class="fc5-c-button-icon-start">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(2, 4)" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2">
+              <path d="M2,0 L18,0 C19.1,0 20,0.9 20,2 L20,14 C20,15.1 19.1,16 18,16 L2,16 C0.9,16 0,15.1 0,14 L0,2 C0,0.9 0.9,0 2,0 Z"></path>
+              <polyline points="20 2 10 9 0 2"></polyline>
+            </g>
+          </svg>
+        </span>
+        Send
+      </button>
+    </div>
+  </form>
+{% endblock %}
