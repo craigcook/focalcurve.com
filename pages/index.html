@@ -9,12 +9,27 @@
 
 {% block content %}
 
-<div class="fc5-l-content fc5-t-content-md">
-  {% include "includes/site-title.html" %}
+<div class="fc5-l-content fc5-t-content-lg">
+  <article class="home-intro">
+    {% include "includes/site-title.html" %}
 
-  <p>Hello, world. I’m Craig and I make websites. Like this one. It’s very much
-    a work in progress right now but it’s coming along.</p>
+    <img class="home-blinky" src="/assets/img/about/blinky.svg" alt="An orange cartoon fish with three bulbous eyes and a pronounced overbite." width="500" height="400" loading="lazy">
 
+    <div class="home-intro-body">
+      <p>Hi. I’m a web developer and designer with over 25 years of experience
+        hand-crafting websites with HTML, CSS, and a dash of JavaScript.</p>
+
+      <p>I’m based in Oakland, California where I live with my cat and
+        probably too many comic books.<sup>*</sup></p>
+
+      <p>You can read more <a href="/about">about me</a>, see some
+        <a href="/work">things I’ve made</a>, or <a href="/contact">drop me a line</a>.
+        Thanks for stopping by.</p>
+
+      <p class="fc5-c-footnote"><sup>*</sup> This is a lie; there is no such
+        thing as too many comics.</p>
+    </div>
+  </article>
 </div>
 
 {% endblock %}

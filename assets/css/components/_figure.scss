@@ -5,13 +5,18 @@
     margin: 0 auto var(--spacing-lg);
     text-align: center;
 
+    &.fc5-t-border:not(figure),
+    &.fc5-t-border img {
+        border: 2px solid var(--accent-color-primary);
+    }
+
     figcaption {
         font-size: var(--body-sm);
         font-style: italic;
     }
 
     @media #{$mq-md} {
-        margin-bottom: var(--spacing-sm);
+        margin-block-end: var(--spacing-sm);
 
         &.fc5-l-align-end {
             float: inline-end;
@@ -26,7 +31,10 @@
         }
 
         &.fc5-l-align-center {
-            margin-bottom: var(--spacing-xl);
+            margin-block-end: var(--spacing-xl);
+            margin-inline-start: calc(var(--spacing-md) * -1);
+            margin-inline-end: calc(var(--spacing-md) * -1);
+            max-width: calc(100% + var(--spacing-md) + var(--spacing-md));
         }
     }
 
@@ -37,6 +45,12 @@
 
         &.fc5-l-align-start {
             margin-inline-start: calc(var(--layout-md) * -1);
+        }
+
+        &.fc5-l-align-center {
+            margin-inline-start: calc(var(--layout-md) * -1);
+            margin-inline-end: calc(var(--layout-md) * -1);
+            max-width: calc(100% + var(--layout-md) + var(--layout-md));
         }
     }
 }

@@ -37,3 +37,8 @@ hr {
 .fc5-u-visually-hidden {
     @include visually-hidden;
 }
+
+.fc5-c-footnote {
+    color: var(--text-color-secondary);
+    font-size: var(--body-xs);
+}

@@ -1,3 +1,20 @@
 @use "includes/lib" as *;
 
 @use "components/title";
+
+.home-blinky {
+    float: inline-end;
+    inline-size: 100px;
+    margin: 0 0 1em var(--spacing-lg);
+    shape-outside: polygon(38% -14%, 50% -35%, 108% -35%, 108% 80%, 70% 100%, 30% 100%, 5% 80%, 0% 50%, 12% 10%);
+    transition: inline-size 300ms ease-in-out;
+
+    @media #{$mq-sm} {
+        inline-size: 250px;
+    }
+
+    @media #{$mq-lg} {
+        inline-size: 500px;
+        margin: -100px -30px 1em var(--spacing-lg);
+    }
+}

@@ -74,10 +74,10 @@
 .fc5-c-navigation-item {
     :link,
     :visited {
-        background-color: var(--background-color-primary);
+        background-color: var(--background-color-secondary);
         box-shadow: 2px 3px 0 var(--shadow-color);
         color: var(--text-color-accent);
-        outline: 1px solid var(--shadow-color);
+        outline: 1px solid var(--accent-color-secondary);
         padding: 0 var(--spacing-lg);
         text-decoration: none;
         transition: background-color 100ms ease, color 100ms ease, box-shadow 100ms ease;
@@ -87,7 +87,7 @@
         &:active {
             background-color: var(--accent-color-secondary);
             box-shadow: 4px 5px 0 var(--shadow-color);
-            color: var(--color-link-hover);
+            color: var(--link-color-hover);
         }
     }
 }
