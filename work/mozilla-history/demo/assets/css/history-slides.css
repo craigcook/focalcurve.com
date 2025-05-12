@@ -349,7 +349,11 @@
     width: 115px;
     margin-left: -135px;
 }
-.on #fact02 .number, .on #fact02 .message, .on #fact02 .block1, .on #fact02 .block2, .on #fact02 .block3 {
+.on #fact02 .number,
+.on #fact02 .message,
+.on #fact02 .block1,
+.on #fact02 .block2,
+.on #fact02 .block3 {
     background: url(../img/history/fact02-pads.png) no-repeat;
 }
 .on #fact02 .number {
