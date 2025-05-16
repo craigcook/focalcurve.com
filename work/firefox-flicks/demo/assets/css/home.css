@@ -1,0 +1,944 @@
+.section:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  bottom: -6px;
+  background: url(../img/div-shadow.png) center top no-repeat;
+  z-index: 10;
+}
+
+.section#rules:after {
+  background: none;
+  display: none;
+}
+
+.section:focus {
+  outline: 0;
+}
+
+.section.alt {
+  background: #e9e9e9 url(../img/bg-grid.png);
+}
+
+.section-detail {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 0 auto 3em;
+}
+
+.actions {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.actions:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.actions ul {
+  text-align: center;
+  list-style: none;
+}
+
+.actions li {
+  float: left;
+  width: 30%;
+  margin: 0 1.5%;
+}
+
+.actions a {
+  font: 14px/1.2 "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.actions .soon {
+  color: #999;
+}
+
+.actions .button-light {
+    padding: 12px 20px;
+}
+
+/*** @Slides *********/
+.js #slideshow {
+  position: relative;
+  z-index: 10;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 0 1em;
+  padding-bottom: 35px;
+  background: url(../img/shadow-940.png) center 300px no-repeat;
+}
+
+#slideshow .slide {
+  margin: 0 0 1.5em;
+  padding: 0 0 1em;
+  border-bottom: 1px solid #dbd8cd;
+}
+
+.js #slideshow .slide {
+  display: none;
+  height: 300px;
+  position: relative;
+  z-index: 10;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.js #slideshow #slide-one {
+  display: block;
+}
+
+.js .slide-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: none;
+}
+
+.js .slide-desc h2 {
+  text-shadow: none;
+  font-size: 42px;
+  line-height: 1.05;
+  margin: 0 0 4px;
+}
+
+.js .slide-desc a {
+  color: #1f9ee5;
+}
+
+.js .cycle-pager {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.js .cycle-pager span {
+  display: inline-block;
+  margin: 0 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  text-indent: -999em;
+  overflow: hidden;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.js .cycle-pager span:hover {
+  background: #bbb;
+}
+
+.js .cycle-pager .cycle-pager-active {
+  background: #aaa;
+}
+
+/*** Slide One: Flicks trailers *********/
+/*** Slide Three: Directors' cuts *********/
+.js #slide-one .slide-desc,
+.js #slide-three .slide-desc,
+.js .slide-generic .slide-desc {
+  width: 440px;
+  height: 180px;
+  left: 0;
+  top: 0;
+  padding: 90px 440px 0 60px;
+}
+
+.js #slide-one p,
+.js #slide-three p,
+.js .slide-generic p {
+  color: #ff592c;
+}
+
+.js #slide-one .thumbnail,
+.js #slide-three .thumbnail,
+.js .slide-generic .thumbnail {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+/*** Slide Two: April early entry *********/
+.js #slide-two .slide-desc {
+  width: 500px;
+  left: 60px;
+  top: 50px;
+}
+
+.js #slide-two .go {
+  font-size: 22px;
+}
+
+/*** Per Slide Overrides *********/
+.js .slide-generic .act span {
+  font-size: 11px;
+  display: block;
+  color: #1F9EE5;
+  margin: -.25em 0 0;
+}
+
+.js .slide-generic .go {
+  font-size: 22px;
+}
+
+.js .slide-judges .slide-desc {
+  padding: 70px 440px 0 60px;
+  width: 400px;
+}
+
+.js .slide-winner .slide-desc,
+.js .slide-mobilized .slide-desc,
+.js .slide-earlyentry .slide-desc,
+.js .slide-shootingpeople .slide-desc,
+.js .slide-creative .slide-desc,
+.js .slide-winbig .slide-desc,
+.js .slide-blogpost .slide-desc{
+  padding: 38px 440px 0 60px;
+  width: 400px;
+}
+
+.js .slide-schwartzberg .slide-desc {
+  padding: 53px 440px 0 60px;
+  width: 440px;
+}
+
+.js .slide-winner .slide-desc {
+  padding: 45px 440px 0 60px;
+  width: 440px;
+}
+
+.js .slide-recap .slide-desc {
+  padding: 30px 440px 0 60px;
+  width: 470px;
+}
+
+
+.js .slide-schwartzberg .slide-desc p,
+.js .slide-winner .slide-desc p,
+.js .slide-shootingpeople .slide-desc p,
+.js .slide-winbig .slide-desc p,
+.js .slide-blogpost .slide-desc p {
+  color: #fff;
+}
+
+
+/*** Locale Per Slide Overrides *********/
+.de .slide-earlyentry .slide-desc h2 {
+  font-size: 22px;
+}
+
+.de .slide-earlyentry .slide-desc p {
+  font-size: 16px;
+}
+
+.fr .slide-earlyentry .slide-desc h2,
+.es .slide-earlyentry .slide-desc h2,
+.pt-BR .slide-earlyentry .slide-desc h2,
+.pl .slide-earlyentry .slide-desc h2,
+.it .slide-earlyentry .slide-desc h2,
+.es .slide-winner .slide-desc h2,
+.de .slide-winner .slide-desc h2,
+.pl .slide-winner .slide-desc h2 {
+  font-size: 28px;
+}
+
+.de .slide-winner .go {
+  font-size: 20px;
+}
+
+
+/* one off thumb */
+.js .slide-winner .video-play {
+  overflow: hidden;
+}
+
+.js .slide-winner .video-play div {
+  bottom: 10px;
+  position: absolute;
+  left: 5px;
+  color: #fff;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.js .slide-winner .video-play div:after {
+  content: " »";
+  white-space: nowrap;
+}
+
+/* @About *********/
+#about {
+  background: url(../img/spot-1.png) -500px -40px no-repeat, url(../img/spot-2.png) 140% 100px no-repeat, url(../img/spot-3.png) 75% 220% no-repeat;
+}
+
+#about .section-intro {
+  width: 740px;
+}
+
+#about .section-detail {
+  width: 320px;
+  position: relative;
+  padding-left: 320px;
+}
+
+#about .section-detail .video {
+  width: 240px;
+  padding-bottom: 8px;
+  background: url(../img/shadow-240.png) center bottom no-repeat;
+  float: left;
+  margin-left: -300px;
+}
+
+#about .section-detail .video img {
+  display: block;
+  margin: 0 auto;
+}
+
+#about .section-detail h2 {
+  text-align: center;
+  font: bold 18px Vollkorn, serif;
+  overflow: hidden;
+  margin: 0 0 .75em -300px;
+}
+
+#about .section-detail h2 span {
+  display: inline-block;
+  margin: 0 10px .25em;
+}
+
+/* @2013 @Flicks *********/
+#flicks2013 .section-intro {
+  width: 90%;
+}
+
+#flicks2013 .section-intro .note {
+  display: block;
+  font-size: .75em;
+}
+
+#flicks2013 .info {
+  list-style: none;
+  width: 80%;
+  padding: 0 10%;
+  margin: 0 auto 2em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  overflow: auto;
+}
+
+#flicks2013 .info li {
+  width: 46%;
+  margin: 0 2% .5em;
+  display: inline-block;
+}
+
+#flicks2013 .info li:nth-child(odd) {
+  clear: left;
+  float: left;
+  text-align: right;
+}
+
+#flicks2013 .info li:nth-child(even) {
+  clear: right;
+  float: right;
+  text-align: left;
+}
+
+#flicks2013 .info .button-light {
+  width: 90%;
+  text-align: center;
+}
+
+#flicks2013 .entry-list {
+  margin: 0 auto 20px;
+}
+
+#flicks2013 .entry {
+  width: 282px;
+  float: left;
+  margin: 0 15px 2em;
+}
+
+
+/* @Judges *********/
+#judges {
+  background: url(../img/spot-1.png) 170% 10px no-repeat, url(../img/spot-2.png) -20% 200% no-repeat, url(../img/spot-3.png) 5% -320px no-repeat;
+}
+
+body.voting #judges {
+  background: #e9e9e9 url(../img/bg-grid.png);
+}
+
+#judges .section-intro {
+  width: 620px;
+}
+
+.judges {
+  list-style: none;
+  width: 800px;
+  margin: 0 auto 2em;
+}
+
+.judges:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.judge {
+  width: 135px;
+  padding-left: 5px;
+  margin: 0 10px 2em;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+}
+
+.judge:nth-child(5n+1) {
+  clear: left;
+}
+
+.judge .quote {
+  display: none;
+}
+
+.judge .fn {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  margin: 0 0 .5em;
+}
+
+.judge .role {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.judge a {
+  color: #212a2f;
+  display: block;
+}
+
+.judge a:focus {
+  outline: 0;
+}
+
+.judge .photo {
+  width: 130px;
+  margin: 0 0 .5em -5px;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+#judge-quote {
+  clear: both;
+  border-top: 1px solid #ccc;
+  width: 300px;
+  height: 11em;
+  margin: 20px auto 0;
+  padding: 20px 0 0;
+  text-align: center;
+  font: italic 14px/1.3 "Open Sans", sans-serif;
+}
+
+#judge-quote .quote {
+  margin: 0 -50px;
+}
+
+.quote figcaption {
+  margin: -1em 0 1em;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+
+.quote cite {
+  font-style: normal;
+}
+
+#modal .judge-bio {
+  max-width: 620px;
+  padding: 30px;
+  margin: 0 auto;
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  font: 14px "Open Sans", sans-serif;
+  border: 0;
+}
+
+#modal .judge-bio h2 {
+  font-size: 20px;
+}
+
+/* @Prizes *********/
+body.voting #prizes {
+  background: url(../img/spot-1.png) 170% 10px no-repeat, url(../img/spot-2.png) -20% 200% no-repeat, url(../img/spot-3.png) 5% -320px no-repeat;
+}
+
+.prizes {
+  text-align: center;
+  overflow: auto;
+  margin: 2em -10px 0;
+}
+
+.prize {
+  width: 300px;
+  margin: 0 10px 2em;
+  float: left;
+}
+
+.prizes h2 {
+  font-size: 22px;
+}
+
+.prizes p {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 10px 1em;
+}
+
+.prize h2:before {
+  content: "{ ";
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.prize h2:after {
+  content: " }";
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.prize.grand {
+  width: 460px;
+  float: none;
+  clear: both;
+  margin: 2em auto 3em;
+}
+
+.prize.grand h2 {
+  font-size: 28px;
+}
+
+.prize ul.prose {
+  text-align: left;
+  font: 14px "Open Sans", sans-serif;
+}
+
+/* @Rules *********/
+#rules {
+  background: url(../img/spot-1.png) -50% 50% no-repeat, url(../img/spot-2.png) 85% 180% no-repeat, url(../img/spot-3.png) 120% -120px no-repeat;
+  text-align: center;
+}
+
+body.voting #rules {
+  background: #e9e9e9 url(../img/bg-grid.png);
+}
+
+#rules .section-intro {
+  width: 780px;
+}
+
+.rules {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.rules h2 {
+  font-size: 22px;
+}
+
+.rules p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Tablet Layout: 760px */
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+
+  #intro .section-title {
+    width: 80%;
+    margin: 0 auto .15em;
+  }
+
+  .js #slideshow {
+    width: 720px;
+    height: 230px;
+    background: url(../img/shadow-720.png) center 230px no-repeat;
+  }
+
+  .slide .backdrop {
+    max-width: 720px;
+    height: auto;
+  }
+
+  .js #slide-one .slide-desc,
+  .js #slide-three .slide-desc,
+  .js .slide-generic .slide-desc {
+    width: 360px;
+    left: 0;
+    top: 0;
+    padding: 20px 320px 0 40px;
+  }
+
+  .js .slide-desc h2 {
+    font-size: 30px;
+  }
+
+  .js .slide-desc p {
+    margin: 0 0 1em;
+  }
+
+  .js .slide-desc .act {
+    margin-top: -.25em;
+  }
+
+  .js #slide-one .thumbnail,
+  .js #slide-three .thumbnail,
+  .js .slide-generic .thumbnail {
+    width: 260px;
+    top: 40px;
+    right: 40px;
+  }
+
+  .js .slide-winner .video-play div {
+    bottom: 6px;
+    font-size: 16px;
+  }
+
+  .js #slide-two .slide-desc {
+    width: 400px;
+    left: 40px;
+    top: 40px;
+    font-size: 15px;
+  }
+
+  .js .slide-desc {
+    font-size: 16px;
+  }
+
+  #flicks2013 .section-intro {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #flicks2013 .entry {
+    width: 205px;
+  }
+
+  .judges {
+    width: 480px;
+    margin: 0 auto 2em;
+  }
+
+  .judges .judge:nth-child(5n+1) {
+    clear: none;
+  }
+
+  .judges .judge:nth-child(3n+1) {
+    clear: left;
+  }
+
+  .judges .judge:nth-child(10) {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .prize {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto 2em;
+    float: none;
+  }
+
+  #about {
+    background-position: 720px 10px, -15% 180%, 5% -350px;
+  }
+
+  #judges {
+    background-position: -40% 500%, 10% -100%, 165% 70%;
+  }
+
+  #rules {
+    background-position: -460px -40px, 170% 280px, 75% 165%;
+  }
+
+  /* Locale-specific slide fixes */
+  .it .slide-winner .slide-desc p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 760px) {
+
+  #about .section-intro,
+  #about .section-detail,
+  #about .section-detail .video,
+  #about .actions,
+  #about .actions p,
+  #flicks2013 .section-intro,
+  #judges .section-intro,
+  #rules .section-intro,
+  #rules .rules {
+    width: auto;
+  }
+
+  .section-intro {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .js .slide .backdrop {
+    width: 100%;
+    display: block;
+  }
+
+  .js .slide-desc {
+    position: static;
+    color: inherit;
+  }
+
+  .js .slide-generic .slide-desc p {
+    color: inherit;
+  }
+
+  .js .slide-desc h2 {
+    font-size: 36px;
+  }
+
+  .js #slideshow {
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 2em;
+    background: #fff none;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  }
+
+  .js .cycle-pager {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .js #slideshow .slide,
+  .cycle-sentinel {
+    width: 100%;
+    height: auto;
+  }
+
+  .js .slide .backdrop,
+  .cycle-sentinel .backdrop {
+    display: block;
+    margin: -80px auto 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .js .slide-desc,
+  .js #slideshow .slide-desc,
+  .js #slide-one .slide-desc,
+  .js #slide-three .slide-desc,
+  .js .slide-generic .slide-desc {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 40px;
+    text-align: center;
+  }
+
+  .js .slide-desc h2 {
+    font-size: 28px;
+  }
+
+  .js #slide-one .thumbnail,
+  .js #slide-three .thumbnail,
+  .js .slide-generic .thumbnail {
+    position: static;
+    display: block;
+    margin: 1em auto;
+    width: 260px;
+  }
+
+  .js .slide-winner .video-play div  {
+    position: static;
+    display: block;
+    margin: 1em auto;
+    width: 260px;
+    color: inherit;
+  }
+
+  .js .slide-winner .slide-desc, {
+    position: static;
+    color: ;
+  }
+
+  #about .section-detail {
+    padding: 0;
+    text-align: center;
+  }
+
+  #about .section-detail .video {
+    margin: 0 0 1em;
+    float: none;
+  }
+
+  #about .section-detail h2 {
+    margin-left: 0;
+  }
+
+  #about .actions h3 span {
+    float: none;
+    display: block;
+    margin: 0;
+  }
+
+  #flicks2013 .info {
+    width: auto;
+    padding: 0 0 30px;
+  }
+
+  #flicks2013 .info li {
+    display: block;
+    width: auto;
+  }
+
+  #flicks2013 .info li:nth-child(odd),
+  #flicks2013 .info li:nth-child(even) {
+    float: none;
+    text-align: center;
+  }
+
+  #flicks2013 .entry {
+    width: 260px;
+    float: none;
+    margin: 0 auto 1.5em;
+  }
+
+  .prizes {
+    margin: 0;
+  }
+
+  .prize,
+  .prize.grand {
+    width: auto;
+    float: none;
+  }
+
+  .actions li,
+  .actions .submit {
+    float: none;
+    width: auto;
+    margin: 0 auto 1.6em;
+  }
+
+  .judges {
+    width: auto;
+    margin: 0 0 1em;
+  }
+
+  .judge {
+    width: 125px;
+    margin-bottom: 1em;
+  }
+
+  .judges .judge:nth-child(3n+1),
+  .judges .judge:nth-child(5n+1) {
+    clear: none;
+  }
+
+  .judges .judge:nth-child(2n+1) {
+    clear: left;
+  }
+
+  .judges .judge:nth-child(10) {
+    clear: none;
+    float: left;
+  }
+
+  #judge-quote {
+    height: 12em;
+  }
+
+  #judge-quote .quote {
+    margin: 0 10px;
+  }
+
+  #about {
+    background-position: 190px 45%, -300px -160px, -200px 150%;
+  }
+
+  #judges {
+    background-position: -260px 260%, -360px 30%, 200px -330px;
+  }
+
+  #rules {
+    background-position: 150px -340px, 190px 140%, -370px 420px;
+  }
+
+  #modal .judge-bio {
+    max-width: 300px;
+  }
+
+}
+
+/* Wide Mobile Layout: 480px */
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+
+  .actions li {
+    width: auto;
+  }
+
+  #video-frame {
+    width: 460px;
+    height: 258px;
+  }
+
+  #flicks2013 .entry {
+    width: 200px;
+    float: left;
+    margin: 0 15px 1.5em;
+  }
+
+  #flicks2013 .entry:nth-child(3n+1) {
+    clear: none;
+  }
+
+  #flicks2013 .entry:nth-child(2n+1) {
+    clear: left;
+  }
+
+  #about {
+    background-position: 420px 55%, -320px -160px, -200px 170%;
+  }
+
+  #judges {
+    background-position: 300px 560%, -360px 30%, 260px -360px;
+  }
+
+  #rules {
+    background-position: 290px -430px, 320px 165%, -320px 220px;
+  }
+
+  .judges {
+    width: 305px;
+    margin: 0 auto 2em;
+  }
+
+  #modal .judge-bio {
+    max-width: 400px;
+  }
+
+}
+
