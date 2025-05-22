@@ -59,8 +59,6 @@ Disallow: /
 
 User-agent: *
 Disallow: /contact/handler.php
-Disallow: /work/*/demo/
-
 Disallow: /harming/humans
 Disallow: /ignoring/human/orders
 Disallow: /harm/to/self

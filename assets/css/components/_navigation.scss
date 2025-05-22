@@ -20,8 +20,8 @@
 
 .fc5-c-navigation-logo {
     filter: drop-shadow(2px 4px 0 var(--shadow-color));
-    margin-bottom: var(--spacing-md);
     grid-column: 1;
+    margin-bottom: var(--spacing-md);
 
     :link,
     :visited {
@@ -67,20 +67,23 @@
 
 .fc5-c-navigation-menu {
     display: flex;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
     margin: 0;
 }
 
 .fc5-c-navigation-item {
+
     :link,
     :visited {
         background-color: var(--background-color-secondary);
         box-shadow: 2px 3px 0 var(--shadow-color);
         color: var(--text-color-accent);
+        display: inline-block;
         outline: 1px solid var(--accent-color-secondary);
         padding: 0 var(--spacing-md);
         text-decoration: none;
-        transition: background-color 100ms ease, color 100ms ease, box-shadow 100ms ease;
+        transform: scale(1);
+        transition: background-color 100ms ease, color 100ms ease, box-shadow 100ms ease, transform 100ms ease;
 
         &:hover,
         &:focus,
@@ -88,6 +91,7 @@
             background-color: var(--accent-color-secondary);
             box-shadow: 4px 5px 0 var(--shadow-color);
             color: var(--link-color-hover);
+            transform: scale(1.1);
         }
     }
 }
